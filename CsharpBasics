@@ -1,0 +1,103 @@
+using System.Numerics;
+using System.Security.Cryptography;
+
+namespace CsharpBasics;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+      
+      //am I supposed to declare my variables at the top of my code? or is it ok to do as I go, as long as it is organized?
+      
+      //declare sample1 and sample2
+         const byte sample1 = 0x3A;
+         byte sample2 = 58;
+         //check condition
+            if (sample1 == sample2)
+            {Console.WriteLine("The samples are equal.");}
+            else
+            {Console.WriteLine("The samples are not equal.");}
+         //declare heartrate
+         int heartrate = 85;
+         //check condition
+            if (heartrate > 40 && heartrate < 80)
+            {Console.WriteLine("The heartrate is normal.");}
+            else
+            {Console.WriteLine("The heartrate is not normal.");}
+         //declare deposits
+         double deposits = 135002796;
+         //check condition
+            if (deposits > 100000000)
+            {Console.WriteLine("You are exceedingly wealthy.");}
+            else
+            {Console.WriteLine("Sorry you are poor.");}
+
+         //declare mass and acceration
+         float mass = 14.6f;
+         float acceleration = 9.800f;
+         //formula for force is mass * acceleration
+         float force = mass * acceleration;
+         //use formula
+         Console.WriteLine(force);
+
+         //declare distance
+         double distance = 129.763001;
+         //add is the distance
+         Console.WriteLine(distance + " is the disstance");
+         
+         //declare lost and expensive
+         bool lost = true;
+         bool expensive = true;
+         //check conditions
+         if (lost == true && expensive == true){
+            Console.WriteLine("I am really sorry! I will get the manager");
+         }
+         else if (lost == false && expensive == false){
+            Console.WriteLine("Here is a coupon for 10% off");
+         }
+
+         //declare integar choice 
+         int choice = 2;
+         //use switch/case to run through the possible outcomes and break the loop
+         switch(choice){
+            case 1:
+               Console.WriteLine("You chose 1.");
+               break;
+            case 2:
+               Console.WriteLine("You chose 2.");
+               break;
+            case 3:
+               Console.WriteLine("You chose 3.");
+               break;
+            case 4:
+               Console.WriteLine("You made an unkown choice");
+               break;
+         }
+         //declare integral as '\u222B'
+         const char integral = '\u222B';
+         //add is an integral
+         Console.WriteLine(integral + " is an integral");
+
+         //declare i and use for loop to check conditions of <+ 10 and add 1
+         for (int i = 5; i <= 10; i++){
+            Console.WriteLine("i = " + i);
+         }
+
+         //use while loop to check that age is >0 and <6
+         int age = 0;
+         while (age < 6){
+            Console.WriteLine("Age = " + age);
+            //go up in incriments of 1
+            age++;
+         }
+
+         //declare greeting and name
+         const string Greeting = "Hello";
+         string name = "Karen";
+         //output "Hello Karen
+         Console.WriteLine(Greeting + " " + name);
+
+        
+    }
+}
